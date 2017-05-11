@@ -1,0 +1,6 @@
+Czwartkowy SCRUM:
+Za³o¿enie nowego konta assembla poniewa¿ stare straci³o ju¿ swoj¹ wa¿noœæ (okres próbny 14 dni),
+utworzenie przestrzeni, projektu oraz repozytorium na assembli
+instalacja oprogramowania SourceTree oraz niezbêdnych dodatków (Git itp.) do³¹czenie i uaktualnienie repozytorium globalnego,
+oraz utworzenie mojego pliku tekstowego w którym bêdê opisywa³ moje codzienne aktywnoœci. By³o to ma³e wprowadzenie i zapoznanie siê 
+z narzêdziem pracy grupowej. Dodatkowo zainstalowa³em potrzebne mi narzêdzia informatyczne to pracy nad projektem (CodeBlocks).
