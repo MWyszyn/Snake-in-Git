@@ -1,0 +1,7 @@
+aby dokonaæ commitu przez source tree:
+1. tworzycie/modyfikujecie plik
+2. otwieracie sourcetree
+3. przeci¹gacie wybrane pliki do scommitowania do górnego okienk
+4. commit!
+BRAWO!
+pamietajcie o push-owaniu po commitach i czêstym pullowaniu ¿eby byæ na bierz¹co
