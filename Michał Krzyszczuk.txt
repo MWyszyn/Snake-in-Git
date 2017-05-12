@@ -1,5 +1,9 @@
-Czwartkowy SCRUM:
+11 maja 2017 SCRUM:
 Za³o¿enie nowego konta Google, assembla poniewa¿ stare straci³y ju¿ swoj¹ wa¿noœæ (okres próbny 14 dni),
 instalacja oprogramowania SourceTree oraz niezbêdnych dodatków (Git itp.) do³¹czenie i uaktualnienie repozytorium globalnego,
 oraz utworzenie mojego pliku tekstowego w którym bêdê opisywa³ moje codzienne aktywnoœci. By³o to ma³e wprowadzenie i zapoznanie siê 
 z narzêdziem pracy grupowej. Dodatkowo zainstalowa³em potrzebne mi narzêdzia informatyczne to pracy nad projektem (CodeBlocks).
+12 maja 2017 SCRUM:
+Wykoanie schematu blokowego funkcji odczytuj¹cej dane pobrane z klawiatury
+https://docs.google.com/drawings/d/1YmLUX4LOWRnt3l8USbkKMcWtsLkVyn47WVUJmtrthd0/edit?usp=sharing
+dzisiejsza data potwierdza wykonanie zadania, ju¿ teraz je commituje

@@ -5,3 +5,4 @@ aby dokonaæ commitu przez source tree:
 4. commit!
 BRAWO!
 pamietajcie o push-owaniu po commitach i czêstym pullowaniu ¿eby byæ na bierz¹co
+Ja proponujê aby przed wykonaniem jakiejkolwiek pracy, pullowaæ aby pracowaæ na aktualnym kodzie :) 
