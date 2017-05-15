@@ -7,3 +7,6 @@ z narzêdziem pracy grupowej. Dodatkowo zainstalowa³em potrzebne mi narzêdzia inf
 Wykoanie schematu blokowego funkcji odczytuj¹cej dane pobrane z klawiatury
 https://docs.google.com/drawings/d/1YmLUX4LOWRnt3l8USbkKMcWtsLkVyn47WVUJmtrthd0/edit?usp=sharing
 dzisiejsza data potwierdza wykonanie zadania, ju¿ teraz je commituje
+15 maja 2017 SCRUM:
+Dzisiaj próbowa³em podpi¹c bibliotekê sfml do CodeBloksa i wypróbowaæ czy dzia³a niestety coœ posz³o nie tak i bd wci¹¿ próbowa³ to naprawiæ 
+za³¹czam screena
