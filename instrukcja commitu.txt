@@ -1,8 +1,9 @@
-aby dokonaæ commitu przez source tree:
-1. tworzycie/modyfikujecie plik
-2. otwieracie sourcetree
-3. przeci¹gacie wybrane pliki do scommitowania do górnego okienk
-4. commit!
+INSTRUKCJA DOKONYWANIA COMMITU:
+1.Pobieracie aktualn¹ wersjê repozytorium(pull)*
+2. tworzycie/modyfikujecie plik
+3. otwieracie  oprogramowanie Sourcetree
+4. przeci¹gacie wybrane pliki do commitowania (stage all)
+5. commit i push.
+6. Wchodzimy na assembla.com-git i sprawdzamy profilaktycznie czy zmiany zosta³y napisane
 BRAWO!
-pamietajcie o push-owaniu po commitach i czêstym pullowaniu ¿eby byæ na bierz¹co
-Ja proponujê aby przed wykonaniem jakiejkolwiek pracy, pullowaæ aby pracowaæ na aktualnym kodzie :) 
+*ograniczy to do minimum liczbe konfliktów i u³atwi nasz¹ pracê

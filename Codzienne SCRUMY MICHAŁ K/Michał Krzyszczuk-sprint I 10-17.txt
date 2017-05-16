@@ -21,6 +21,7 @@ https://www.sfml-dev.org/tutorials/2.4/start-cb.php
 https://www.youtube.com/watch?v=AkrbLqP_5tg
 https://www.youtube.com/watch?v=AOs0Te5H1EU&t=16s
 Uda³o siê przygotowaæ œrodowisko do pisania projektów.
+Kosmetycznie poprawi³em instrukcjê commitowania, tak aby by³a zrozumia³a i ogranicza³a b³êdy i konflikty
 Podsumowanie sprintu :
 
 WSZYSTKIE ZADANIA Z TEGO SPRINTU ZOSTA£Y WYKONANE PRZEZEMNIE TERMINOWO I POPRAWNIE
