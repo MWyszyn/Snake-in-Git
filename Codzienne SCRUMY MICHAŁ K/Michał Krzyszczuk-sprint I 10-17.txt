@@ -1,0 +1,26 @@
+1 SPRINT 10-17 maja 2017 
+	DNI WOLNE : 12 maja 2017- GODZINY REKTORSKIE
+		13,14 maja 2017-WEEKEDN 
+
+11 maja 2017 SCRUM:
+Za³o¿enie nowego konta Google, Assembla poniewa¿ stare straci³y ju¿ swoj¹ wa¿noœæ (okres próbny 14 dni),
+Instalacja oprogramowania SourceTree oraz niezbêdnych dodatków (Git itp.) do³¹czenie i uaktualnienie repozytorium globalnego,
+oraz utworzenie mojego pliku tekstowego i folderu w którym bêdê opisywa³ moje codzienny SCRUM. By³o to ma³e wprowadzenie i zapoznanie siê 
+z narzêdziem pracy grupowej. Dodatkowo zainstalowa³em potrzebne mi narzêdzia informatyczne to pracy nad projektem (Code::Blocks).
+12 maja 2017 SCRUM:
+Wykoanie schematu blokowego funkcji odczytuj¹cej dane pobrane z klawiatury:
+https://docs.google.com/drawings/d/1YmLUX4LOWRnt3l8USbkKMcWtsLkVyn47WVUJmtrthd0/edit?usp=sharing
+dzisiejsza data potwierdza wykonanie zadania, je¿eli bêdzie wymaga³o poprawy wizualnej zostanie poprawione.
+15 maja 2017 SCRUM:
+Dzisiaj próbowa³em zainstalowaæ bibliotekê sfml do CodeBloksa i wypróbowaæ czy dzia³a.
+Niestety coœ posz³o nie tak i po sprawdzeniu wszystkich mo¿liwych poradników nie bylem w stanie 
+poradziæ sobie z problemem.
+16 maja 2017 SCRUM:
+Po wielu próbach i skorzystaniu z nastêpuj¹cych Ÿróde³:
+https://www.sfml-dev.org/tutorials/2.4/start-cb.php
+https://www.youtube.com/watch?v=AkrbLqP_5tg
+https://www.youtube.com/watch?v=AOs0Te5H1EU&t=16s
+Uda³o siê przygotowaæ œrodowisko do pisania projektów.
+Podsumowanie sprintu :
+
+WSZYSTKIE ZADANIA Z TEGO SPRINTU ZOSTA£Y WYKONANE PRZEZEMNIE TERMINOWO I POPRAWNIE
