@@ -1,0 +1,11 @@
+11.05.2017 (czwartek)
+Za³o¿enie nowego konta na assembli. Do³¹czenie do wspólnego projektu.
+Pobranie oprogramowania git oraz SourceTree.
+
+15.05.2017 (poniedzia³ek)
+Za³o¿enie repozytorium lokalnego. Zapoznanie siê z sfml.
+
+16.05.2017 (wtorek)
+Stworzenie schematu blokowego.
+
+
