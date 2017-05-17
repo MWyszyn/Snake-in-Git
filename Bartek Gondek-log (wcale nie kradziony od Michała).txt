@@ -1,8 +1,14 @@
-Czwartkowy SCRUM:
+Czwartkowy SCRUM 11 V:
 Za³o¿enie nowego konta assembla poniewa¿ stare straci³o ju¿ swoj¹ wa¿noœæ (okres próbny 14 dni),
 utworzenie przestrzeni, projektu oraz repozytorium na assembli,
 dodanie reszty grupy do teamu,
 instalacja oprogramowania SourceTree oraz niezbêdnych dodatków (Git itp.) do³¹czenie i uaktualnienie repozytorium globalnego,
 oraz utworzenie mojego pliku tekstowego w którym bêdê opisywa³ moje (niekoniecznie) codzienne aktywnoœci.
-
+Napotka³em problemy z ³¹czeniem z repozytorium globalnym.
 Przepraszam Micha³
+
+Pi¹tek 12 V:
+Pomoc kolegom w l¹czeniu Sourcetree z repozytorium globalnym.
+
+Wtorek 16 V:
+Poznanie biblioteki SFML i napisanie programu prezentuj¹cego mo¿liwoœci.
