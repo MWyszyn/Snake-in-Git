@@ -3,7 +3,7 @@
 using namespace std;
 
 
-char **stworz(int wys,int szer)
+char **stworz(int wys,int szer)//funkcja tworzy tablice dwuwymiarową o dowolnych rozmiarach i wypelnia ja na pusto
     {
     char *wektor=new char[szer];
     char **wektory=new char*[wys];
@@ -21,7 +21,7 @@ char **stworz(int wys,int szer)
         return wektory;
     }
 
-void ramka(char **tab,int szer, int wys)
+void ramka(char **tab,int szer, int wys)//rysuje ramke do okola tablicy o zadanych wymiarach
     {
         for(int i = 0 ; i < szer ; i++)
         {
@@ -45,7 +45,7 @@ int main()
     int wys;
     cin>>wys;
     char **tab;
-    tab=stworz(wys,szer);
+    tab=stworz(wys,szer);//piszemy w konwencji tab[wysokosc][szerekosc] czyli tab[2][5] to bedzie element w 3 wierwszy i 6 kolumnie
     int i; int j;
 
     ramka(tab,szer,wys);
