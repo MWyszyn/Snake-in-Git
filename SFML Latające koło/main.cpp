@@ -5,11 +5,17 @@
 
 int main()
 {
-    int i=0;
-    sf::RenderWindow window(sf::VideoMode(400, 400), "SFML works!");
-    sf::CircleShape shape(100.f);
+    int i=0,zx,zy,mx,my;
+    sf::RenderWindow window(sf::VideoMode(700, 700), "SFML works!");
+    sf::CircleShape shape(30.f);
     shape.setFillColor(sf::Color::Green);
-    shape.setPosition(100,100);
+    sf::CircleShape slonce (80.f);
+    slonce.setFillColor (sf::Color::Yellow);
+    slonce.setPosition(120+150,120+150);
+    sf::CircleShape moon(10.f);
+    moon.setFillColor(sf::Color::White);
+
+
 
     while (window.isOpen())
     {
@@ -19,14 +25,19 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-
-        shape.setPosition(50*cos(i/10)+100,50*sin(i/10)+100);
-        Sleep(10);
+        zx=250*cos(i*3.1415/1000)+170+150;
+        zy=250*sin(i*3.1415/1000)+170+150;
+        mx=(65)*sin(i*3.1415*13.53/1000)+zx+20;
+        my=(65)*cos(i*3.1415*13.53/1000)+zy+20;
+        shape.setPosition(zx,zy);
+        moon.setPosition(mx,my);
+        Sleep(2);
         window.clear();
+        window.draw(slonce);
         window.draw(shape);
+        window.draw(moon);
         window.display();
         i++;
-
 
     }
 

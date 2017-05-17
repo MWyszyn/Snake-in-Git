@@ -13,8 +13,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="../../../../../Desktop/SFML-2.4.2/lib" />
-					<Add directory="../../../../../Desktop/SFML-2.4.2/include" />
+					<Add directory="SFML-2.4.2/include" />
+					<Add directory="SFML-2.4.2/lib" />
 				</Compiler>
 				<Linker>
 					<Add library="SFML-2.4.2/lib/libsfml-graphics-d.a" />
