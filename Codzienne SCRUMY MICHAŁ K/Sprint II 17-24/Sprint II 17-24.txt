@@ -1,0 +1,4 @@
+17 maja 2017
+Dzisiaj zosta³em SCRUM Masterem produktu, ustawi³em Milestone na assembli, zalozylem repozytorium
+do pisania kodu i napisalem funkcjê tworz¹c¹ tablice 2D dynamicznie oraz wykonuj¹ca ramkê. 
+Porozdziela³em mojemu zespo³owi tickety na assembli
