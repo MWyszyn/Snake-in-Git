@@ -6,7 +6,7 @@
 int main()
 {
     int i=0,zx,zy,mx,my;
-    sf::RenderWindow window(sf::VideoMode(700, 700), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(700, 700), "WOLOLOLO");
     sf::CircleShape shape(30.f);
     shape.setFillColor(sf::Color::Green);
     sf::CircleShape slonce (80.f);
@@ -27,8 +27,8 @@ int main()
         }
         zx=250*cos(i*3.1415/1000)+170+150;
         zy=250*sin(i*3.1415/1000)+170+150;
-        mx=(65)*sin(i*3.1415*13.53/1000)+zx+20;
-        my=(65)*cos(i*3.1415*13.53/1000)+zy+20;
+        mx=(65)*cos(i*3.1415*13.53/1000)+zx+20;
+        my=(65)*sin(i*3.1415*13.53/1000)+zy+20;
         shape.setPosition(zx,zy);
         moon.setPosition(mx,my);
         Sleep(2);
