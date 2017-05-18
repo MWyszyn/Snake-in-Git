@@ -3,6 +3,15 @@
 #include <conio.h>
 using namespace std;
 
+enum Kierunek
+    {
+        UP,
+        RIGHT,
+        DOWN,
+        LEFT
+    }
+    kierunek;
+
 
 char **stworz(int wys,int szer)//funkcja tworzy tablice dwuwymiarową o dowolnych rozmiarach i wypelnia ja na pusto
     {
@@ -47,16 +56,4 @@ int main()
     cin>>wys;
     char **tab;
     tab=stworz(wys,szer);//piszemy w konwencji tab[wysokosc][szerekosc] czyli tab[2][5] to bedzie element w 3 wierwszy i 6 kolumnie
-    int i; int j;
-
-    ramka(tab,szer,wys);
-    for(i = 0 ; i < wys ; i++ )
-        {
-            for ( j = 0 ; j < szer ; j++)
-            {
-              cout<<tab[i][j];
-            }
-            cout<<endl;
-        }
-
 }
