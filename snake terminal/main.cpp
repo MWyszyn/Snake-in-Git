@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <windows.h>
+#include <conio.h>
 using namespace std;
 
 
@@ -25,13 +26,13 @@ void ramka(char **tab,int szer, int wys)//rysuje ramke do okola tablicy o zadany
     {
         for(int i = 0 ; i < szer ; i++)
         {
-            tab[0][i]=4;
-            tab[wys-1][i]=4;
+            tab[0][i]=(char)219;
+            tab[wys-1][i]=(char)219;
         }
         for(int i = 1 ; i < (wys-1)  ; i++)
         {
-            tab[i][0]=4;
-            tab[i][szer-1]=4;
+            tab[i][0]=(char)219;
+            tab[i][szer-1]=(char)219;
 
         }
     }
