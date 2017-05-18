@@ -12,3 +12,7 @@ Pomoc kolegom w l¹czeniu Sourcetree z repozytorium globalnym.
 
 Wtorek 16 V:
 Poznanie biblioteki SFML i napisanie programu prezentuj¹cego mo¿liwoœci.
+
+Czwartek 18 V:
+Zaimplementowanie klasy punkt (odpowiedzialnej za orintacjê w kartezjañskim uk³adzie wspó³rzêdnych) wraz z konstruktorem i (na razie) potrzebymi metodami
+Zaimplementowanie klasy Snake (odpowiedzialnej za po³o¿nie i u³o¿enie wê¿a w uk³adzie wspó³rzednych) wraz z konstruktorem i destruktorem

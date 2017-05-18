@@ -31,7 +31,7 @@ int main()
         my=(65)*sin(i*3.1415*13.53/1000)+zy+20;
         shape.setPosition(zx,zy);
         moon.setPosition(mx,my);
-        Sleep(2);
+        Sleep(1);
         window.clear();
         window.draw(slonce);
         window.draw(shape);
