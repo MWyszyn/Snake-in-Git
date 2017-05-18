@@ -2,3 +2,6 @@
 Dzisiaj zosta³em SCRUM Masterem produktu, ustawi³em Milestone na assembli, zalozylem repozytorium
 do pisania kodu i napisalem funkcjê tworz¹c¹ tablice 2D dynamicznie oraz wykonuj¹ca ramkê. 
 Porozdziela³em mojemu zespo³owi tickety na assembli
+18 maja 2017
+Dzisiaj doda³em 2 tickety na assembli - jeden nieprzydzielony oraz drugi przydzielony samemu sobie
+-napisanie fragmentu kodu odpowiedzialnego za obslugê klawiatury. Udalo mi siê go napisaæ jednak nie mam mozliwosci go wytestowac.
