@@ -43,7 +43,7 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
 
     public:
 
-    Snake(int w, int h, Kierunek=RIGHT, int ll=3)
+    Snake(int w, int h, Kierunek dir=RIGHT, int ll=3) //konstruktor tworzy w linii prostej weza z glowa w punkcie w,h ustawionego poczatkowo do rucchu w kirunku dir o dlugosci l
     {
         l=ll;
         places=new Point*[l];
@@ -69,7 +69,7 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
     }
 
 
-    ~Snake()
+    ~Snake() //destruktor-zabija snake'a :(
     {
         for(int i=0;i<l;i++) delete places[i];
         delete places;
