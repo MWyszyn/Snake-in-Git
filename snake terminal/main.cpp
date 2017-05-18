@@ -51,9 +51,39 @@ int main()
     cout<<"Podaj szerokosc planszy"<<endl;
     int szer;
     cin>>szer;
-    cout<<"Podaj wysokoœæ planszy"<<endl;
+    cout<<"Podaj wysokosc planszy"<<endl;
     int wys;
     cin>>wys;
     char **tab;
     tab=stworz(wys,szer);//piszemy w konwencji tab[wysokosc][szerekosc] czyli tab[2][5] to bedzie element w 3 wierwszy i 6 kolumnie
+
+    /*for(;;)do obsługi klawiatury nie ruszać
+        {
+        if(kbhit())
+            {
+                switch(getch())
+                {case 'w':
+                case 'W':
+                        if(kierunek!=DOWN)
+                            kierunek=UP;
+                    break;
+                case 'a':
+                case 'A':
+                        if(kierunek!=LEFT)
+                            kierunek=RIGHT;
+                    break;
+                case 's':
+                case 'S':
+                        if(kierunek!=UP)
+                            kierunek=DOWN;
+                    break;
+                case 'd':
+                case 'D':
+                        if(kierunek!=RIGHT)
+                            kierunek=LEFT;
+                    break;
+                }
+            }
+        }*/
+
 }
