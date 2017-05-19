@@ -1,0 +1,86 @@
+#include <iostream>
+
+using namespace std;
+
+enum Kierunek
+    {
+        UP,
+        RIGHT,
+        DOWN,
+        LEFT
+    }
+    kierunek;
+
+class Point //podstawowa klasa opisuj1ca punkt x,y w ukl wsp
+{
+    void MoveToPoint (Point p)
+    {
+        width=p.widthOut();
+        height=p.heightOut();
+    }
+
+};
+
+class Snake //klasa opisuj1ca polozenie/ulozenie weza w tablicy
+{
+
+    void draw (char **tab)
+    {
+        for(int i=0;i<l;i++) *(tab[places[i].heightOut()]+places[i].widthOut())='x';// rysuje snake'a w tabeli za pomoca 'x'-ów
+    }
+
+    void vanish (char **tab)
+    {
+        for(int i=0;i<l;i++) *(tab[places[i].heightOut()]+places[i].widthOut())=' ';// wymazuje snake'a (jesli spacja nie odpowiada  za puste pole- do poprawy)
+    }
+
+    void step (Kierunek dir)
+    {
+        if(dir!=UP&&dir!=DOWN&&dir!=LEFT&&dir!=RIGHT) return;
+        places[l-1].MoveToPoint(places[0]);
+        switch(dir)
+        {
+        case UP:
+            places[0].MoveTo(places[0].widthOut(),places[0].heightOut()-1);
+            break;
+        case DOWN:
+            places[0].MoveTo(places[0].widthOut(),places[0].heightOut()+1);
+            break;
+        case LEFT:
+            places[0].MoveTo(places[0].widthOut()-1,places[0].heightOut());
+            break;
+        case RIGHT:
+            places[0].MoveTo(places[0].widthOut()+1,places[0].heightOut());
+            break;
+        }
+    }
+
+    void expandToDir (Kierunek dir)
+    {
+        Point* temp=new Point[l+1];
+        if(dir!=UP&&dir!=DOWN&&dir!=LEFT&&dir!=RIGHT) return;
+
+        temp[0].MoveToPoint(places[0]);
+
+        for(int i=0;i<l;i++) temp[i+1].MoveToPoint(places[i]);
+
+        switch(dir)
+        {
+        case UP:
+            temp[0].MoveTo(temp[0].widthOut(),temp[0].heightOut()-1);
+            break;
+        case DOWN:
+            temp[0].MoveTo(temp[0].widthOut(),temp[0].heightOut()+1);
+            break;
+        case LEFT:
+            temp[0].MoveTo(temp[0].widthOut()-1,temp[0].heightOut());
+            break;
+        case RIGHT:
+            temp[0].MoveTo(temp[0].widthOut()+1,temp[0].heightOut());
+            break;
+        }
+        l++;
+        places=temp;
+
+    }
+};

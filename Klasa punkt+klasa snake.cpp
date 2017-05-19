@@ -11,7 +11,7 @@ enum Kierunek
     }
     kierunek;
 
-class Point //podstawowa klasa opisuj¹ca punkt x,y w ukl wsp
+class Point //podstawowa klasa opisujÂ¹ca punkt x,y w ukl wsp
 {
     int width, height;
 
@@ -29,13 +29,13 @@ class Point //podstawowa klasa opisuj¹ca punkt x,y w ukl wsp
         height=h;
     }
 
-    void MoveToPoint (Point p)
+    void MoveToPoint (Point p) //nadaje punktowi takie wspolrzedne jakie ma wczytany punkt
     {
         width=p.widthOut();
         height=p.heightOut();
     }
 
-    bool IsEqual (int w, int h) //metoda sprawdzaj¹ca czy punkt ma podane wspolrzedne
+    bool IsEqual (int w, int h) //metoda sprawdzajÂ¹ca czy punkt ma podane wspolrzedne
     {
         if(w==width&&h==height) return true;
         else return false;
@@ -54,9 +54,9 @@ class Point //podstawowa klasa opisuj¹ca punkt x,y w ukl wsp
 
 };
 
-class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
+class Snake //klasa opisujÂ¹ca polozenie/ulozenie weza w tablicy
 {
-    Point* places; //tablica (dynamicznie alokowana bo ilosc segmentow bedzie sie zwiekszac) zawieraj¹ca punkty w ktorych znajduja sie kolejne segmenty weza
+    Point* places; //tablica (dynamicznie alokowana bo ilosc segmentow bedzie sie zwiekszac) zawierajÂ¹ca punkty w ktorych znajduja sie kolejne segmenty weza
     int l;
 
     public:
@@ -101,47 +101,48 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
         return l;
     }
 
-    void draw (char **tab)
+    void draw (char **tab) // rysuje snake'a w tabeli za pomoca 'x'-Ã³w
     {
-        for(int i=0;i<l;i++) *(tab[places[i].heightOut()]+places[i].widthOut())='x';// rysuje snake'a w tabeli za pomoca 'x'-ów
+        for(int i=0;i<l;i++) *(tab[places[i].heightOut()]+places[i].widthOut())='x';
     }
 
-    void vanish (char **tab)
+    void vanish (char **tab) // wymazuje snake'a (jesli spacja nie odpowiada  za puste pole- do poprawy)
     {
-        for(int i=0;i<l;i++) *(tab[places[i].heightOut()]+places[i].widthOut())=' ';// wymazuje snake'a (jesli spacja nie odpowiada  za puste pole- do poprawy)
+        for(int i=0;i<l;i++) *(tab[places[i].heightOut()]+places[i].widthOut())=' ';
     }
 
-    void step (Kierunek dir)
+    void step (Kierunek dir) //krok weza (bez uwzglednienia zebrania pnktu, wejscia w sciane
     {
-        if(dir!=UP&&dir!=DOWN&&dir!=LEFT&&dir!=RIGHT) return;
-        places[l-1].MoveToPoint(places[0]);
+        if(dir!=UP&&dir!=DOWN&&dir!=LEFT&&dir!=RIGHT) return; //sprawdza czy kierunek jest podany poprawnie
+        for(int i=l-1;i>0;i--) places[i].MoveToPoint(places[i-1]) //przesuwa i-ty segment w miejsce wczesniejszego (segmenty licze od glowy ktora jest zerowym seg.)
         switch(dir)
         {
         case UP:
-            places[0].MoveTo(places[0].widthOut(),places[0].heightOut()-1);
-            break;
-        case DOWN:
-            places[0].MoveTo(places[0].widthOut(),places[0].heightOut()+1);
-            break;
-        case LEFT:
-            places[0].MoveTo(places[0].widthOut()-1,places[0].heightOut());
-            break;
-        case RIGHT:
-            places[0].MoveTo(places[0].widthOut()+1,places[0].heightOut());
+            places[0].MoveTo(places[0].widthOut(),places[0].heightOut()-1); //////////////////////////////////////////////////////
+            break;                                                          //
+        case DOWN:                                                          //
+            places[0].MoveTo(places[0].widthOut(),places[0].heightOut()+1); //
+            break;                                                          // przesuwanie glowy we wskazanym kierunku
+        case LEFT:                                                          // (powyzszy for jej nie przesuwal)
+            places[0].MoveTo(places[0].widthOut()-1,places[0].heightOut()); //
+            break;                                                          //
+        case RIGHT:                                                         //
+            places[0].MoveTo(places[0].widthOut()+1,places[0].heightOut()); /////////////////////////////////////////////////////////
             break;
         }
     }
 
     void expandToDir (Kierunek dir)
     {
-        Point* temp=new Point[l+1];
-        if(dir!=UP&&dir!=DOWN&&dir!=LEFT&&dir!=RIGHT) return;
 
-        temp[0].MoveToPoint(places[0]);
+        if(dir!=UP&&dir!=DOWN&&dir!=LEFT&&dir!=RIGHT) return; //sprawdzenie poprawnosci wczytanego kierunku
 
-        for(int i=0;i<l;i++) temp[i+1].MoveToPoint(places[i]);
+        Point* temp=new Point[l+1]; //utworzenie nowej wiekszej tablicy na segmenty
+        temp[0].MoveToPoint(places[0]); //przekopiowanie pozycji glowy
 
-        switch(dir)
+        for(int i=0;i<l;i++) temp[i+1].MoveToPoint(places[i]); //przekopiowanie wraz z przenumerowaniem elementow (w temp-ie "glowa" wystepuje dwa razy na zerowym i pierwszym miejscu, spokojnie tak ma byÄ‡)
+
+        switch(dir) //przesuniecie faktycznej glowy we wskazanym kierunku
         {
         case UP:
             temp[0].MoveTo(temp[0].widthOut(),temp[0].heightOut()-1);
@@ -156,8 +157,10 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
             temp[0].MoveTo(temp[0].widthOut()+1,temp[0].heightOut());
             break;
         }
-        l++;
-        places=temp;
+        l++; //zwiekszenie dlugosci
+
+        delete places;//usuniecie starych pozycji
+        places=temp; //przekopiowanie nowych pozycji  na miejsce starych
 
     }
 };
