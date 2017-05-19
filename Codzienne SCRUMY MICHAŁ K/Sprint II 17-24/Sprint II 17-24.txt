@@ -5,3 +5,7 @@ Porozdziela³em mojemu zespo³owi tickety na assembli
 18 maja 2017
 Dzisiaj doda³em 2 tickety na assembli - jeden nieprzydzielony oraz drugi przydzielony samemu sobie
 -napisanie fragmentu kodu odpowiedzialnego za obslugê klawiatury. Udalo mi siê go napisaæ jednak nie mam mozliwosci go wytestowac..
+19 maja 2017
+Wykona³em test czesci kodu odpowiadaj¹cego za obslugê danych z klawiatury, dzia³a ona prawid³owo gdy tylko na klawiwaturze zostanie 
+nacisniety klawisz sterowania wêzem typ wyliczeniowy enum zmienia odpowiednio wartoœæ . Sprawdzi³em równie¿ postêp prac
+wykonywanych przez innych developerów i zmieni³em statusy wykonywanych przezemnie zadan na assembli

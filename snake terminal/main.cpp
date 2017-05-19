@@ -56,8 +56,8 @@ int main()
     cin>>wys;
     char **tab;
     tab=stworz(wys,szer);//piszemy w konwencji tab[wysokosc][szerekosc] czyli tab[2][5] to bedzie element w 3 wierwszy i 6 kolumnie
-
-    /*for(;;)do obsługi klawiatury nie ruszać
+kierunek=UP;
+    for(;;) //obsługi klawiatury nie ruszać
         {
         if(kbhit())
             {
@@ -84,6 +84,6 @@ int main()
                     break;
                 }
             }
-        }*/
-
+        cout<<kierunek<<endl;
+        }
 }
