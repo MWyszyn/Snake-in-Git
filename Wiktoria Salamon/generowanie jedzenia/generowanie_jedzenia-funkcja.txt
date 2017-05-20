@@ -1,0 +1,11 @@
+char** generuj_jedzenie (char** plansza, int wysokosc,int szerokosc)
+{
+
+    int x,y;
+    x=rand()% wysokosc; 
+    y=rand()% szerokosc;
+
+    plansza[x][y]='X';
+
+    return plansza;
+}
