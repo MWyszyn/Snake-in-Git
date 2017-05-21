@@ -71,16 +71,11 @@ int main()
     cout<<"Podaj wysokosc planszy"<<endl;
     int wys;
     cin>>wys;
-    wys=wys+2; //zeby po utworzeniu ramki zachowac zadane wymiary
-    szer=wys+2;
     char **tab;
-    cout << "Pobrano dane..." <<endl;
     tab=stworz(wys,szer);
-    cout << "Utworzono tablice..."<<endl;
     tab=ramka(tab,wys,szer);
-    cout << "Utworzono ramke..."<<endl;
     wyswietl(tab,wys,szer);
-    cout << endl <<endl;
+    cout <<endl;
 
     for (int i=0;i<5;i++)
     {
