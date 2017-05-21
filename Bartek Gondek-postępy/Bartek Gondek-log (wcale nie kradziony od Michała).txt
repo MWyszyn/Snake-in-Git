@@ -21,3 +21,6 @@ Zaimplementowanie klasy Snake (odpowiedzialnej za po³o¿nie i u³o¿enie wê¿a w uk³
 Pi¹tek 19 V:
 Rozszszerzenie klasy Snake o metodê ruchu we¿a oraz wyd³u¿enia go 
 (work2.txt)
+
+Niedziela 21 V:
+Po³¹cznie kilku bloków tekstu od ró¿nych dev-ów, napisanie metody klasy w¹¿ odpowiadaj¹cej za koniec gry, testowanie ca³oœci (³o panie.c , ³o panie.exe)
