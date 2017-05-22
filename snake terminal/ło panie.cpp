@@ -252,7 +252,7 @@ char** ramka(char **tab,int wys, int szer)//rysuje ramke do okola tablicy o zada
 int main()
 {
     dir=LEFT;
-    Snake snake(10,20,dir,10); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
+    Snake snake(10,20,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
     cout<<"Podaj szerokosc planszy"<<endl;
     int szer;
     cin>>szer;
@@ -298,7 +298,8 @@ int main()
         snake.step(dir); // wykonuje krok
         snake.draw(tab); // wpisuje weza po wykonaniu kroku do tablicy
         wyswietl(tab,wys,szer); //wypisuje tablice na ekran
-        Sleep(500);
+        generuj_jedzenie(tab,wys,szer);
+        Sleep(600);
 
         }
 }
