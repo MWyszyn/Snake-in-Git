@@ -298,31 +298,31 @@ char** ramka(char **tab,int wys, int szer)//rysuje ramke do okola tablicy o zada
 
 int main()
 
-{   int punkty=0;
-    FILE*plikout=fopen("danewyj.txt","w");
-    cout<<"Witaj w terminalowej grze snake"<<endl;
-    dir=LEFT;
-    Snake snake(5,7,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
-    cout<<"podaj nazwe gracza";
+{   int szer, wys, punkty=0;
+    dir=RIGHT;
+    Snake snake(5,8,dir,3);//kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
     char nazwa[50];
+    char** tab;
+
+
+    FILE*plikout=fopen("danewyj.txt","w");
+
+    cout<<"Witaj w terminalowej grze snake"<<endl;
+    cout<<"podaj nazwe gracza"<<endl;
     fgets(nazwa,50,stdin);
     fprintf(plikout,"%s",nazwa);
+
     cout<<"Podaj szerokosc planszy"<<endl;
-    int szer;
     cin>>szer;
+
     cout<<"Podaj wysokosc planszy"<<endl;
-    int wys;
     cin>>wys;
-    char **tab;
+
 
     tab=stworz(wys,szer);//piszemy w konwencji tab[wysokosc][szerekosc] czyli tab[2][5] to bedzie element w 3 wierwszy i 6 kolumnie*/
     tab=ramka(tab,wys,szer);
 
-    char **kopia; //do przechowywania kopii planszy z poprzedniej iteracji, zeby sprawdzac, czy zostal zebrany punkt
-    kopia=stworz(wys,szer);
     generuj_jedzenie(tab,wys,szer);
-
-    przepisz_tablice(tab, kopia, wys,szer);
 
     system("cls");
     for(;;) //obsługi klawiatury nie ruszać
@@ -365,20 +365,6 @@ int main()
         else snake.step(dir); // wykonuje krok
         snake.draw(tab); // wpisuje weza po wykonaniu kroku do tablicy
         wyswietl(tab,wys,szer); //wypisuje tablice na ekran
-
-	/* ???? po co to???
-	//warunek na generowanie jedzenia
-
-    //wspolrzedne glowy
-    int x,y;
-    x=snake.places[0].width;
-    y=snake.places[0].height;
-
-	if(kopia[y][x]=='+') generuj_jedzenie(tab,wys,szer);
-
-    przepisz_tablice(tab, kopia, wys,szer);*/
-
-
         Sleep(300);
 
         }
