@@ -3,6 +3,7 @@
 #include <ctime>
 #include <windows.h>
 #include <conio.h>
+#include <fstream>
 
 using namespace std;
 
@@ -298,9 +299,14 @@ char** ramka(char **tab,int wys, int szer)//rysuje ramke do okola tablicy o zada
 int main()
 
 {   int punkty=0;
+    FILE*plikout=fopen("danewyj.txt","w");
     cout<<"Witaj w terminalowej grze snake"<<endl;
     dir=LEFT;
     Snake snake(5,7,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
+    cout<<"podaj nazwe gracza";
+    char nazwa[50];
+    fgets(nazwa,50,stdin);
+    fprintf(plikout,"%s",nazwa);
     cout<<"Podaj szerokosc planszy"<<endl;
     int szer;
     cin>>szer;
@@ -376,4 +382,6 @@ int main()
         Sleep(300);
 
         }
+        fprintf(plikout,"%i\n",punkty);
+        fclose(plikout);
 }
