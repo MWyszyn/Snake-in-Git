@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int punkty;
+
 
 enum Kierunek
     {
@@ -296,16 +296,11 @@ char** ramka(char **tab,int wys, int szer)//rysuje ramke do okola tablicy o zada
 
 
 int main()
-<<<<<<< HEAD
-{
-    punkty=0;
-    dir=RIGHT;
-    Snake snake(5,7,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
-=======
-{   cout<<"Witaj w terminalowej grze snake"<<endl;
+
+{   int punkty=0;
+    cout<<"Witaj w terminalowej grze snake"<<endl;
     dir=LEFT;
-    Snake snake(10,20,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
->>>>>>> 8c5fb0da7cdb3f5042147953a231a0b864db0cd9
+    Snake snake(5,7,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
     cout<<"Podaj szerokosc planszy"<<endl;
     int szer;
     cin>>szer;
