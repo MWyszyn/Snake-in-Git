@@ -274,7 +274,7 @@ char** ramka(char **tab,int wys, int szer)//rysuje ramke do okola tablicy o zada
 
 
 int main()
-{
+{   cout<<"Witaj w terminalowej grze snake"<<endl;
     dir=LEFT;
     Snake snake(10,20,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
     cout<<"Podaj szerokosc planszy"<<endl;
