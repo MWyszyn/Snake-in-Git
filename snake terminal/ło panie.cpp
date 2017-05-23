@@ -354,7 +354,11 @@ int main()
                 }
             }
         system("cls");
-        if(snake.crash(tab,dir)==true) return punkty;//sprawdza czy waz nie umrze
+        if(snake.crash(tab,dir)==true)
+            {fprintf(plikout,"%i\n\n\n",punkty);
+            fclose(plikout);
+            return punkty;//sprawdza czy waz nie umrze
+            }
         snake.vanish(tab);  //wymazuje starego weza z tablicy
         if(snake.point(tab,dir)==true)
         {
@@ -368,6 +372,5 @@ int main()
         Sleep(300);
 
         }
-        fprintf(plikout,"%i\n",punkty);
-        fclose(plikout);
+
 }
