@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include <windows.h>
@@ -17,10 +17,8 @@ enum Kierunek
 
 class Point //podstawowa klasa opisuj¹ca punkt x,y w ukl wsp
 {
-    int width, height;
-
     public:
-
+    int width, height;
     Point (int w=0, int h=0)
     {
         width=w;
@@ -60,10 +58,11 @@ class Point //podstawowa klasa opisuj¹ca punkt x,y w ukl wsp
 
 class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
 {
-    Point* places; //tablica (dynamicznie alokowana bo ilosc segmentow bedzie sie zwiekszac) zawieraj¹ca punkty w ktorych znajduja sie kolejne segmenty weza
+
     int l;
 
     public:
+    Point* places; //tablica (dynamicznie alokowana bo ilosc segmentow bedzie sie zwiekszac) zawieraj¹ca punkty w ktorych znajduja sie kolejne segmenty weza
 
     Snake(int w, int h, Kierunek dir, int ll) //konstruktor tworzy w linii prostej weza z glowa w punkcie w,h ustawionego poczatkowo do rucchu w kirunku dir o dlugosci l
     {
@@ -198,7 +197,7 @@ char** generuj_jedzenie (char** plansza, int wysokosc,int szerokosc)
     x=rand()% (wysokosc-2)+1; //pomijamy ramke
     y=rand()% (szerokosc-2)+1;
 
-    plansza[x][y]='X';
+    plansza[x][y]='+';
 
     return plansza;
 }
@@ -233,6 +232,23 @@ void wyswietl (char** plansza, int wys, int szer)
         cout <<endl;
     }
 }
+
+
+//funkcja do przepisywania tablicy
+
+char** przepisz_tablice (char** oryginal, char** kopia,int wys,int szer)
+{
+	int i,j;
+  	for(i=0;i<wys;i++)
+   	{
+        	for(j=0;j<szer;j++)
+        	{
+            		kopia[i][j]=oryginal[i][j];
+        	}
+	}
+	return kopia;
+}
+
 char** ramka(char **tab,int wys, int szer)//rysuje ramke do okola tablicy o zadanych wymiarach
     {
         for(int i = 0 ; i < szer ; i++)
@@ -260,8 +276,15 @@ int main()
     int wys;
     cin>>wys;
     char **tab;
+
     tab=stworz(wys,szer);//piszemy w konwencji tab[wysokosc][szerekosc] czyli tab[2][5] to bedzie element w 3 wierwszy i 6 kolumnie*/
     tab=ramka(tab,wys,szer);
+
+    char **kopia; //do przechowywania kopii planszy z poprzedniej iteracji, zeby sprawdzac, czy zostal zebrany punkt
+    kopia=stworz(wys,szer);
+    generuj_jedzenie(tab,wys,szer);
+
+    przepisz_tablice(tab, kopia, wys,szer);
 
     system("cls");
     for(;;) //obsługi klawiatury nie ruszać
@@ -298,7 +321,19 @@ int main()
         snake.step(dir); // wykonuje krok
         snake.draw(tab); // wpisuje weza po wykonaniu kroku do tablicy
         wyswietl(tab,wys,szer); //wypisuje tablice na ekran
-        generuj_jedzenie(tab,wys,szer);
+
+	//warunek na generowanie jedzenia
+
+    //wspolrzedne glowy
+    int x,y;
+    x=snake.places[0].width;
+    y=snake.places[0].height;
+
+	if(kopia[y][x]=='+') generuj_jedzenie(tab,wys,szer);
+
+    przepisz_tablice(tab, kopia, wys,szer);
+
+
         Sleep(600);
 
         }

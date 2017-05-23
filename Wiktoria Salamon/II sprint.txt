@@ -3,3 +3,6 @@ konfiguracja biblioteki sfml i testy
 
 20.05.2017 (sobota)
 napisanie funkcji do generowania jedzenia, testy
+
+23.05.2017
+warunek do generowania jedzenia
