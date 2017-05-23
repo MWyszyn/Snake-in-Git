@@ -6,6 +6,8 @@
 
 using namespace std;
 
+int punkty;
+
 enum Kierunek
     {
         UP,
@@ -187,6 +189,26 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
             else return false;
         }
     }
+    bool point(char** tab,Kierunek dir) // metoda sprawdzajaca czy w nastepnym ruchu snake nie wejdzie w ramke badz w samego siebie
+    {
+        switch(dir)
+        {
+        case UP://sprawdza czy waz nie wchodzi w ramkę VVVVVVV                VVV samego siebie z pominięciem osatatniego segmentu (po ruchu ogona już tam nie będzie)
+            if(tab[places[0].heightOut()-1][places[0].widthOut()]=='+') return true;
+            else return false;
+        case DOWN:
+            if(tab[places[0].heightOut()+1][places[0].widthOut()]=='+') return true;
+            else return false;
+
+        case RIGHT:
+            if(tab[places[0].heightOut()][places[0].widthOut()+1]=='+') return true;
+            else return false;
+
+        case LEFT:
+            if(tab[places[0].heightOut()][places[0].widthOut()-1]=='+') return true;
+            else return false;
+        }
+    }
 };
 
 
@@ -275,8 +297,9 @@ char** ramka(char **tab,int wys, int szer)//rysuje ramke do okola tablicy o zada
 
 int main()
 {
-    dir=LEFT;
-    Snake snake(10,20,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
+    punkty=0;
+    dir=RIGHT;
+    Snake snake(5,7,dir,2); //kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
     cout<<"Podaj szerokosc planszy"<<endl;
     int szer;
     cin>>szer;
@@ -324,12 +347,19 @@ int main()
                 }
             }
         system("cls");
-        if(snake.crash(tab,dir)==true) return 0;//sprawdza czy waz nie umrze
+        if(snake.crash(tab,dir)==true) return punkty;//sprawdza czy waz nie umrze
         snake.vanish(tab);  //wymazuje starego weza z tablicy
-        snake.step(dir); // wykonuje krok
+        if(snake.point(tab,dir)==true)
+        {
+            snake.expandToDir(dir);
+            generuj_jedzenie(tab,wys,szer);
+            punkty++;
+        }
+        else snake.step(dir); // wykonuje krok
         snake.draw(tab); // wpisuje weza po wykonaniu kroku do tablicy
         wyswietl(tab,wys,szer); //wypisuje tablice na ekran
 
+	/* ???? po co to???
 	//warunek na generowanie jedzenia
 
     //wspolrzedne glowy
@@ -339,10 +369,10 @@ int main()
 
 	if(kopia[y][x]=='+') generuj_jedzenie(tab,wys,szer);
 
-    przepisz_tablice(tab, kopia, wys,szer);
+    przepisz_tablice(tab, kopia, wys,szer);*/
 
 
-        Sleep(600);
+        Sleep(300);
 
         }
 }
