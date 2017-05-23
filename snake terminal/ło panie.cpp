@@ -154,10 +154,10 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
             temp[0].MoveTo(temp[0].widthOut(),temp[0].heightOut()+1);
             break;
         case LEFT:
-            temp[0].MoveTo(temp[0].widthOut()+1,temp[0].heightOut());
+            temp[0].MoveTo(temp[0].widthOut()-1,temp[0].heightOut());
             break;
         case RIGHT:
-            temp[0].MoveTo(temp[0].widthOut()-1,temp[0].heightOut());
+            temp[0].MoveTo(temp[0].widthOut()+1,temp[0].heightOut());
             break;
         }
         l++; //zwiekszenie dlugosci
@@ -193,12 +193,20 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
 char** generuj_jedzenie (char** plansza, int wysokosc,int szerokosc)
 {
 
+
     int x,y;
-    x=rand()% (wysokosc-2)+1; //pomijamy ramke
-    y=rand()% (szerokosc-2)+1;
+    while(1)
+    {
+        x=rand()% (wysokosc-2)+1; //pomijamy ramke
+        y=rand()% (szerokosc-2)+1;
 
-    plansza[x][y]='+';
+        if(plansza[x][y]!='o'&&plansza[x][y]!='X')
+        {
+            plansza[x][y]='+';
+            return plansza;
+        }
 
+    }
     return plansza;
 }
 
