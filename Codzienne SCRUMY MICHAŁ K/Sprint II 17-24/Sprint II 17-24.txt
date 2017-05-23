@@ -13,3 +13,6 @@ wykonywanych przez innych developerów i zmieni³em statusy wykonywanych przezemni
 Uaktualnienie zadañ i ticketów na Cardwall na assembli. Testowa³em dzisiaj kod napisany przez zespó³ i wykry³em niespójnoœæ przy
 wyd³u¿aniu wê¿a . Niestety z powodu póŸnej pory lider zespo³u developerskiego jest ju¿ niedostêpny. zaistnia³y problem musimy przedyskutowaæ
 szerszym gronie tak aby nie zepsuæ wykonanej przez nas pracy 
+23 maj 2017
+Podstawy bazy danych. Wczytanie nazwy gracza z strumienia i zapis do pliku oraz zapisanie liczby punktów zdobytych przez gracza do tego
+pliku przy uzyciu biblioteki fstream . Niestety wymaga to je szcze dopracowania.
