@@ -24,3 +24,7 @@ Rozszszerzenie klasy Snake o metodê ruchu we¿a oraz wyd³u¿enia go
 
 Niedziela 21 V:
 Po³¹cznie kilku bloków tekstu od ró¿nych dev-ów, napisanie metody klasy w¹¿ odpowiadaj¹cej za koniec gry, testowanie ca³oœci (³o panie.c , ³o panie.exe)
+
+Wtorek 23 V:
+wys³anie schematu blokowego
+naprawa b³êdów

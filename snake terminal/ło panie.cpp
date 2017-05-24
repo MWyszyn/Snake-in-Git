@@ -354,7 +354,7 @@ int main()
             }
         system("cls");
         if(snake.crash(tab,dir)==true)
-            {fprintf(plikout,"%i\n\n\n",punkty);
+            {fprintf(plikout,"%i\n\n\n",punkty);// MOZESZ PISAC plikout<<punkty (jak do couta)
             fclose(plikout);
             return punkty;//sprawdza czy waz nie umrze
             }
