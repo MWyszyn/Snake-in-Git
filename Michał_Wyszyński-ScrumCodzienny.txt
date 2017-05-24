@@ -1,0 +1,37 @@
+Czwartek 11.05.2017
+Za³o¿enie nowego konta assembla poniewa¿ stare straci³o ju¿ swoj¹ wa¿noœæ (okres próbny 14 dni),
+utworzenie przestrzeni, projektu oraz repozytorium na assembli,
+dodanie reszty grupy do teamu,
+instalacja oprogramowania SourceTree oraz niezbêdnych dodatków (Git itp.) do³šczenie i uaktualnienie repozytorium globalnego,
+oraz utworzenie mojego pliku tekstowego w którym bêdê opisywa³ moje (niekoniecznie) codzienne aktywno?ci.
+Napotka³em problemy z ³šczeniem z repozytorium globalnym.
+Przepraszam Micha³
+
+Pi¹tek 12.05.2017
+Pomoc kolegom w ³¹czeniu Sourcetree z repozytorium globalnym.
+
+Poniedzia³ek 15.05.2017
+Rozpoczêcie nauki C++, poznanie pierwszych bibliotek i funkcji cin oraz cout.
+
+Wtorek 16.05.2017
+Uczenie siê C++, poznanie instrukcji warunkowych oraz pêtli: for, while a tak¿e do_while
+
+Sroda 17.05.2017
+Oddanie uprawnieñ ScrumMastera Micha³owi Krzyszczukowi a tak¿e prezentacja wstêpnych ustaleñ projektu prowadz¹cemu zajêcia
+
+Czwartek 18.05.2017
+Uczenie siê C++, generowanie liczb pseudolosowych, funkcji konieczej do pojawiania siê jedzonka dla wê¿a na ekranie
+
+Pi¹tek 19.05.2017
+Uczenie siê C++, tablice, funkcje rekurencyjne, zapisy strumieni do plików, odczyt strumieni z plików
+
+Poniedzia³ek 22.05.2017
+Uczenie siê C++, ³añcuchy, funkcje, wskaŸniki
+
+Wtorek 23.05.2017
+Napisanie funkcji, realizuj¹cej wyœwietlenie planszy gry
+
+
+
+
+

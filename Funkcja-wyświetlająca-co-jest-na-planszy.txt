@@ -1,0 +1,31 @@
+
+
+void CoTuJest(int p, int q)
+{
+
+    if(tab[p][q] == 'X')
+        cout << "X";
+        
+    else if(tab[p][q] == 'o')
+        cout << "o";
+        
+    else if(tab[p][q] == '@')
+        cout << "@";
+    else
+        tab[p][q] = ' ';
+        
+
+    for(q=0; q<MAXSZER-1; q++)
+    {
+        tab[0][q] = '-';
+        tab[MAXWYS-1][q] = '_';
+    }
+
+    for(p=0; p<MAXWYS; p++)
+    {
+        tab[p][0] = '|';
+        tab[p][MAXSZER-1] = '|';
+    }
+
+
+}

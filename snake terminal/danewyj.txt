@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-Bartek
-=======
-arda
-1
+BARTEK
+5
 
 
->>>>>>> d36a0de3a66a6745f96afd25c2c3bbe37735c797
