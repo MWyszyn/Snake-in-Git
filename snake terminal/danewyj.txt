@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 BARTEK
 5
+=======
+michas
+1
+>>>>>>> 66322e3d6e3994dec9aae28a26e983baee7ee49f
 
 

@@ -235,7 +235,6 @@ char** generuj_jedzenie (char** plansza, int wysokosc,int szerokosc)
 
 char **stworz(int wys,int szer)//funkcja tworzy tablice dwuwymiarow¹ o dowolnych rozmiarach i wypelnia ja na pusto
     {
-    char *wektor=new char[szer];
     char **wektory=new char*[wys];
     for( int i = 0 ; i < wys ; i++)
         {
