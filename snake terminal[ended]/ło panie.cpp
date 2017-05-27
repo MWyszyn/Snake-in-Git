@@ -304,13 +304,14 @@ int main()
     char** tab;
 
 
-    FILE*plikout=fopen("danewyj.txt","w");
+    FILE*plikoutpkt=fopen("danewyjpkt.txt","a");
+    FILE*plikoutnames=fopen("danewyjnames.txt","a");
 
     cout<<"Witaj w terminalowej grze snake"<<endl;
     cout<<"podaj nazwe gracza"<<endl;
     fgets(nazwa,50,stdin);
-    fprintf(plikout,"%s",nazwa);
-
+    fprintf(plikoutnames,"%s",nazwa);
+    fclose(plikoutnames);
     cout<<"Podaj szerokosc planszy"<<endl;
     cin>>szer;
 
@@ -354,8 +355,8 @@ int main()
             }
         system("cls");
         if(snake.crash(tab,dir)==true)
-            {fprintf(plikout,"%i\n\n\n",punkty);// MOZESZ PISAC plikout<<punkty (jak do couta)
-            fclose(plikout);
+            {fprintf(plikoutpkt,"%i\n",punkty);// MOZESZ PISAC plikout<<punkty (jak do couta)
+            fclose(plikoutpkt);
             return punkty;//sprawdza czy waz nie umrze
             }
         snake.vanish(tab);  //wymazuje starego weza z tablicy

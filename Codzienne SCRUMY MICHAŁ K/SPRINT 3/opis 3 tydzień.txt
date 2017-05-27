@@ -1,0 +1,8 @@
+24 maja 2017
+Za³o¿enie nowego Repozytorium Kodu i powi¹zanie z nim projektu na hostingu HitHub, poniewa¿ nasze konto na assembli
+utracily swoj¹ wa¿noœæ. Zdefiniowanie CardWall na postawie metodyki Kanban. Poprawiona zosta³a tak¿e funkcja tworz¹ca 
+tablicê dwuwymiarow¹ ( dynamiczna alokacja pamiêci)
+
+27 maja 2017
+Opracowanie zapisu nazw gracza oraz zdobytych punktów do pliku bêd¹cych ma³¹ baz¹ danych. Przetestowanie napisanego kodu.
+Dokonane zosta³y równie¿ prace z porz¹dkowaniem katalogów na repozytorium.
