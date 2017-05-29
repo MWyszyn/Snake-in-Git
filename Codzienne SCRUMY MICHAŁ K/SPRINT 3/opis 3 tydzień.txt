@@ -3,6 +3,15 @@ Za³o¿enie nowego Repozytorium Kodu i powi¹zanie z nim projektu na hostingu HitHu
 utracily swoj¹ wa¿noœæ. Zdefiniowanie CardWall na postawie metodyki Kanban. Poprawiona zosta³a tak¿e funkcja tworz¹ca 
 tablicê dwuwymiarow¹ ( dynamiczna alokacja pamiêci)
 
+25 maja 2017 
+Zbieranie informacji o aplikacjach okienkowych.
+
 27 maja 2017
 Opracowanie zapisu nazw gracza oraz zdobytych punktów do pliku bêd¹cych ma³¹ baz¹ danych. Przetestowanie napisanego kodu.
 Dokonane zosta³y równie¿ prace z porz¹dkowaniem katalogów na repozytorium.
+
+29 maja 2017
+Dzisiaj zosta³ dokoñczony kod z nak³adk¹ graficzn¹ z sfml. Po jego ukoñczeniu wprowadzi³em menu wyboru poziomu trudnoœci w grze
+oraz wytestowa³em j¹ pod k¹tem ewentualnych boogow. Niestety czasami zdarza siê ¿e jedzenie wê¿a pojawia siê w tym samym miejscu tabeli.
+Jednak narazie nie potrafiliœmy tego naprawiæ. Usun¹³em równie¿ poprzednie wersje , który wprowadza³y niepotrzebne zamieszanie na repozytorium.
+Równie¿ na CardWall zaproponowa³em konieczne do wykonania zadania na czas,który pozosta³ do zakoñczenia projektu.
