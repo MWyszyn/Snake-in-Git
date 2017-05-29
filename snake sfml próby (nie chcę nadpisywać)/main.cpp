@@ -8,6 +8,7 @@
 #include <fstream>
 #define border_up 20
 #define border_left 20
+#define border 20
 
 using namespace std;
 
@@ -95,35 +96,39 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
         case LEFT:
             for(int i=0;i<l;i++) places[i].MoveTo(w+i,h);
             glowa.setRotation(270);
+            glowa.setPosition(places[0].widthOut()*20-border,places[0].heightOut()*20+20-border);
 
             break;
 
         case RIGHT:
             for(int i=0;i<l;i++) places[i].MoveTo(w-i,h);
             glowa.setRotation(90);
+            glowa.setPosition(places[0].widthOut()*20-border,places[0].heightOut()*20-border);
 
             break;
 
         case UP:
             for(int i=0;i<l;i++) places[i].MoveTo(w,h+i);
             glowa.setRotation(0);
+            glowa.setPosition(places[0].widthOut()*20-border,places[0].heightOut()*20-border);
             break;
 
         case DOWN:
             for(int i=0;i<l;i++) places[i].MoveTo(w,h-i);
             glowa.setRotation(180);
+            glowa.setPosition(places[0].widthOut()*20+20-border,places[0].heightOut()*20+20-border);
 
             break;
 
         default:
             break;
         }
-        glowa.setPosition(places[0].widthOut()*20+border_left,places[0].heightOut()*20+border_up);
+
         for(int i=0;i<(l-1);i++)
         {
             tail[i].setRadius(10);
             tail[i].setPointCount(30);
-            tail[i].setPosition(places[i].widthOut()*20+border_left,places[i].heightOut()*20+border_up);
+            tail[i].setPosition(places[i+1].widthOut()*20/*-border_left*/,places[i+1].heightOut()*20/*-border_up*/);
             tail[i].setFillColor(sf::Color::Green);
         }
 
@@ -142,16 +147,12 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
         return l;
     }
 
-    void draw (char **tab,sf::RenderWindow& pwindow) // rysuje snake'a w tabeli za pomoca 'o'-ów
+    void draw (char **tab) // rysuje snake'a w tabeli za pomoca 'o'-ów
     {
         *(tab[places[0].heightOut()]+places[0].widthOut())='X';
         for(int i=1;i<l;i++) *(tab[places[i].heightOut()]+places[i].widthOut())='o';
 
-        pwindow.draw(glowa);
-        /*for(int i=l-1;i>=0;i++)
-        {
-            pwindow.draw(tail[i]);
-        }*/
+
     }
 
     void vanish (char **tab) // wymazuje snake'a
@@ -168,24 +169,29 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
         case UP:
             places[0].MoveTo(places[0].widthOut(),places[0].heightOut()-1); //////////////////////////////////////////////////////
             glowa.setRotation(0);
+            glowa.setPosition(places[0].widthOut()*20,places[0].heightOut()*20);
             break;                                                          //
         case DOWN:                                                          //
             places[0].MoveTo(places[0].widthOut(),places[0].heightOut()+1); //
             glowa.setRotation(180);
+            glowa.setPosition(places[0].widthOut()*20+20,places[0].heightOut()*20+20);
             break;                                                          // przesuwanie glowy we wskazanym kierunku
         case LEFT:                                                          // (powyzszy for jej nie przesuwal)
             places[0].MoveTo(places[0].widthOut()-1,places[0].heightOut()); //
             glowa.setRotation(270);
+            glowa.setPosition(places[0].widthOut()*20,places[0].heightOut()*20+20);
             break;                                                          //
         case RIGHT:                                                         //
             places[0].MoveTo(places[0].widthOut()+1,places[0].heightOut()); /////////////////////////////////////////////////////////
             glowa.setRotation(90);
+            glowa.setPosition(places[0].widthOut()*20+20,places[0].heightOut()*20);
+
             break;
         }
-        glowa.setPosition(places[0].widthOut()*20+border_left,places[0].heightOut()*20+border_up);
+
         for(int i=0;i<(l-1);i++)
         {
-            tail[i].setPosition(places[i].widthOut()*20+border_left,places[i].heightOut()*20+border_up);
+            tail[i].setPosition(places[i+1].widthOut()*20,places[i+1].heightOut()*20);
         }
     }
 
@@ -203,11 +209,11 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
         delete tail;
         tail=new sf::CircleShape[l];
 
-        for(int i=0;i<(l-1);i++)
+        for(int i=0;i<(l);i++)
         {
             tail[i].setRadius(10);
             tail[i].setPointCount(30);
-            tail[i].setPosition(places[i].widthOut()*20+border_left,places[i].heightOut()*20+border_up);
+            tail[i].setPosition(temp[i+1].widthOut()*20,temp[i+1].heightOut()*20);
             tail[i].setFillColor(sf::Color::Green);
         }
 
@@ -216,26 +222,30 @@ class Snake //klasa opisuj¹ca polozenie/ulozenie weza w tablicy
         case UP:
             temp[0].MoveTo(temp[0].widthOut(),temp[0].heightOut()-1);
             glowa.setRotation(0);
+            glowa.setPosition(temp[0].widthOut()*20,temp[0].heightOut()*20);
             break;
         case DOWN:
             temp[0].MoveTo(temp[0].widthOut(),temp[0].heightOut()+1);
             glowa.setRotation(180);
+            glowa.setPosition(temp[0].widthOut()*20+20,temp[0].heightOut()*20+20);
             break;
         case LEFT:
             temp[0].MoveTo(temp[0].widthOut()-1,temp[0].heightOut());
             glowa.setRotation(270);
+            glowa.setPosition(temp[0].widthOut()*20,temp[0].heightOut()*20+20);
             break;
         case RIGHT:
             temp[0].MoveTo(temp[0].widthOut()+1,temp[0].heightOut());
             glowa.setRotation(90);
+            glowa.setPosition(temp[0].widthOut()*20+20,temp[0].heightOut()*20);
             break;
         }
         l++; //zwiekszenie dlugosci
 
         delete places;//usuniecie starych pozycji
         places=temp; //przekopiowanie nowych pozycji  na miejsce starych
-        glowa.setPosition(places[0].widthOut()*20+border_left,places[0].heightOut()*20+border_left);
-        for(int i=0;i<l-1;i++) tail[i].setPosition(places[i+1].widthOut()*20+border_left,places[i+1].heightOut()*20+border_left);
+        //glowa.setPosition(places[0].widthOut()*20+border_left,places[0].heightOut()*20+border_left);
+        //for(int i=0;i<l-1;i++) tail[i].setPosition(temp[i+1].widthOut()*20,temp[i+1].heightOut()*20);
 
     }
 
@@ -374,25 +384,34 @@ int main()
     char** tab;
 
 
-    //FILE*plikoutpkt=fopen("danewyjpkt.txt","a");
-    //FILE*plikoutnames=fopen("danewyjnames.txt","a");
+    FILE*plikoutpkt=fopen("danewyjpkt.txt","a");
+    FILE*plikoutnames=fopen("danewyjnames.txt","a");
 
-    //cout<<"Witaj w terminalowej grze snake"<<endl;
-    //cout<<"podaj nazwe gracza"<<endl;
-    //fgets(nazwa,50,stdin);
-    //fprintf(plikoutnames,"%s",nazwa);
-    //fclose(plikoutnames);
+    cout<<"Witaj w terminalowej grze snake"<<endl;
+    cout<<"podaj nazwe gracza"<<endl;
+    fgets(nazwa,50,stdin);
+    fprintf(plikoutnames,"%s",nazwa);
+    fclose(plikoutnames);
     cout<<"Podaj szerokosc planszy"<<endl;
     cin>>szer;
 
     cout<<"Podaj wysokosc planszy"<<endl;
     cin>>wys;
 
+    sf::ConvexShape gwiazda(5);
+    gwiazda.setPoint(0,sf::Vector2f(1,6));
+    gwiazda.setPoint(1,sf::Vector2f(19,6));
+    gwiazda.setPoint(2,sf::Vector2f(4,18));
+    gwiazda.setPoint(3,sf::Vector2f(10,0));
+    gwiazda.setPoint(4,sf::Vector2f(16,18));
+    gwiazda.setFillColor(sf::Color::Yellow);
 
     tab=stworz(wys,szer);//piszemy w konwencji tab[wysokosc][szerekosc] czyli tab[2][5] to bedzie element w 3 wierwszy i 6 kolumnie*/
     tab=ramka(tab,wys,szer);
 
     generuj_jedzenie(tab,wys,szer,rfh,rfw);
+    gwiazda.setPosition(fw*20,fh*20);
+
 
     sf::RenderWindow window(sf::VideoMode(szer*20, wys*20), "WOLOLOLO");
     sf::RenderWindow& pwindow=window;
@@ -414,8 +433,23 @@ int main()
     convex.setFillColor(sf::Color::Green);
     convex.rotate(90);
 
+    sf::CircleShape* kola;
+    kola=new sf::CircleShape[3];
+    kola[0].setPosition(100,100);
+    kola[0].setRadius(30);
+
+    kola[1].setPosition(100,200);
+    kola[1].setRadius(30);
+
+    kola[2].setPosition(200,200);
+    kola[2].setRadius(30);
+
+
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;
+
+    cout<<endl;
+    system("pause");
 
     while (window.isOpen())
     {
@@ -427,15 +461,69 @@ int main()
 
 
 
+
         }
+
+
+        if(kbhit())
+            {
+                switch(getch())
+                {
+                case 'w':
+                case 'W':
+                    if(dir!=DOWN) dir=UP;
+                    break;
+
+                case 'a':
+                case 'A':
+                    if(dir!=RIGHT) dir=LEFT;
+                    break;
+
+                case 's':
+                case 'S':
+                    if(dir!=UP) dir=DOWN;
+                    break;
+
+                case 'd':
+                case 'D':
+                    if(dir!=LEFT) dir=RIGHT;
+
+                    break;
+                }
+            }
+
+
+        system("cls");
+
+        if(snake.crash(tab,dir)==true)
+            {fprintf(plikoutpkt,"%i\n",punkty);// MOZESZ PISAC plikout<<punkty (jak do couta)
+            fclose(plikoutpkt);
+            return punkty;//sprawdza czy waz nie umrze
+            }
+        snake.vanish(tab);  //wymazuje starego weza z tablicy
+        if(snake.point(tab,dir)==true)
+        {
+            snake.expandToDir(dir);
+            generuj_jedzenie(tab,wys,szer,rfh,rfw);
+            gwiazda.setPosition(fw*20,fh*20);
+            punkty++;
+        }
+        else snake.step(dir); // wykonuje krok
+        snake.draw(tab); // wpisuje weza po wykonaniu kroku do tablicy
+        system("cls");
+        wyswietl(tab,wys,szer); //wypisuje tablice na ekran
+
 
         window.clear();
         window.draw(plansza);
-        //
+        window.draw(gwiazda);
 
-        window.draw(convex);
-        snake.draw(tab,pwindow);//<- do poprawy, crashuje program (da sie wyswitetlic sama golwe bez crasha
+
+        for(int i=0;i<snake.howLong()-1;i++)window.draw(snake.tail[i]);
+        window.draw(snake.glowa);
         window.display();
+        Sleep(400);
+
 
     }
 

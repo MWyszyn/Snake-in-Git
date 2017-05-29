@@ -304,6 +304,7 @@ int main()
     char** tab;
 
 
+
     FILE*plikoutpkt=fopen("danewyjpkt.txt","a");
     FILE*plikoutnames=fopen("danewyjnames.txt","a");
 
