@@ -382,6 +382,7 @@ int main()
     Snake snake(5,8,dir,3);//kolejno wys glowy, szer glowy, poczatkowy dir ruchu, dlugosc weza
     char nazwa[50];
     char** tab;
+    int poziom;
 
 
     FILE*plikoutpkt=fopen("danewyjpkt.txt","a");
@@ -397,6 +398,10 @@ int main()
 
     cout<<"Podaj wysokosc planszy"<<endl;
     cin>>wys;
+    cout<<"Podaj poziom trudnosci w skali 1-10"<<endl;
+    cin>>poziom;
+    poziom=200/poziom;
+
 
     sf::ConvexShape gwiazda(5);
     gwiazda.setPoint(0,sf::Vector2f(1,6));
@@ -522,7 +527,7 @@ int main()
         for(int i=0;i<snake.howLong()-1;i++)window.draw(snake.tail[i]);
         window.draw(snake.glowa);
         window.display();
-        Sleep(400);
+        Sleep(poziom);
 
 
     }
