@@ -17,11 +17,16 @@
 					<Add directory="D:/codeblocks/SFML-2.4.2/lib" />
 					<Add directory="D:/Program Files (x86)/CodeBlocks/MinGW/include" />
 					<Add directory="D:/Program Files (x86)/CodeBlocks/MinGW/lib" />
+					<Add directory="SFML-2.4.2/include" />
+					<Add directory="SFML-2.4.2/lib" />
 				</Compiler>
 				<Linker>
 					<Add library="D:/codeblocks/SFML-2.4.2/lib/libsfml-system-d.a" />
 					<Add library="D:/codeblocks/SFML-2.4.2/lib/libsfml-window-d.a" />
 					<Add library="../SFML-2.4.2/lib/libsfml-graphics-d.a" />
+					<Add library="SFML-2.4.2/lib/libsfml-window-d.a" />
+					<Add library="SFML-2.4.2/lib/libsfml-system-d.a" />
+					<Add library="SFML-2.4.2/lib/libsfml-graphics-d.a" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -41,6 +46,9 @@
 					<Add library="D:/codeblocks/SFML-2.4.2/lib/libsfml-system.a" />
 					<Add library="D:/codeblocks/SFML-2.4.2/lib/libsfml-window.a" />
 					<Add library="D:/codeblocks/SFML-2.4.2/lib/libsfml-graphics.a" />
+					<Add library="SFML-2.4.2/lib/libsfml-graphics-d.a" />
+					<Add library="SFML-2.4.2/lib/libsfml-system.a" />
+					<Add library="SFML-2.4.2/lib/libsfml-window.a" />
 				</Linker>
 			</Target>
 		</Build>
