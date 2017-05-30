@@ -2,7 +2,12 @@ Bartek
 Bartek
 30
 Bartek
+<<<<<<< HEAD
 Wika
 r
 r
 wika
+=======
+michas
+michas
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f

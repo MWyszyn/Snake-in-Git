@@ -2367,7 +2367,11 @@
 	<string>
 	<vector>
 
+<<<<<<< HEAD
 1496096434 source:e:\snakke\sko—czony snake sfml\main.cpp
+=======
+1496132607 source:d:\snake\sko—czony snake sfml\main.cpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics.hpp>
 	<cmath>
 	<windows.h>
@@ -2377,7 +2381,11 @@
 	<conio.h>
 	<fstream>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/CircleShape.hpp>
@@ -2405,7 +2413,11 @@
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/Graphics/View.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/System.hpp>
 	<SFML/Window/Context.hpp>
 	<SFML/Window/ContextSettings.hpp>
@@ -2420,7 +2432,11 @@
 	<SFML/Window/WindowHandle.hpp>
 	<SFML/Window/WindowStyle.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Config.hpp>
 	<SFML/System/Clock.hpp>
 	<SFML/System/Err.hpp>
@@ -2440,6 +2456,7 @@
 	<SFML/System/Vector2.hpp>
 	<SFML/System/Vector3.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\config.hpp
 	"TargetConditionals.h"
 
@@ -2458,6 +2475,26 @@
 	<ostream>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\fileinputstream.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\config.hpp
+	"TargetConditionals.h"
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\export.hpp
+	<SFML/Config.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\time.hpp
+	<SFML/System/Export.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\fileinputstream.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/InputStream.hpp>
@@ -2465,6 +2502,7 @@
 	<cstdio>
 	<string>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\inputstream.hpp
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
@@ -2477,11 +2515,26 @@
 	<SFML/System/NonCopyable.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\memoryinputstream.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\noncopyable.hpp
+	<SFML/System/Export.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\memoryinputstream.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Config.hpp>
 	<SFML/System/InputStream.hpp>
 	<SFML/System/Export.hpp>
 	<cstdlib>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\mutex.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
@@ -2491,6 +2544,17 @@
 	<SFML/System/Time.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\string.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\sleep.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\string.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/System/Export.hpp>
 	<SFML/System/Utf.hpp>
 	<iterator>
@@ -2498,7 +2562,11 @@
 	<string>
 	<SFML/System/String.inl>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\utf.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\utf.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Config.hpp>
 	<algorithm>
 	<locale>
@@ -2506,23 +2574,38 @@
 	<cstdlib>
 	<SFML/System/Utf.inl>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\utf.inl
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\string.inl
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\thread.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\utf.inl
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\string.inl
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\thread.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
 	<SFML/System/Thread.inl>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\thread.inl
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\threadlocal.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\thread.inl
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\threadlocal.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\threadlocalptr.hpp
 	<SFML/System/ThreadLocal.hpp>
 	<SFML/System/ThreadLocalPtr.inl>
@@ -2540,11 +2623,31 @@
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\vector3.inl
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\context.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\threadlocalptr.inl
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\vector2.inl
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\system\vector3.inl
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\context.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Window/Export.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/ContextSettings.hpp>
 	<SFML/System/NonCopyable.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\export.hpp
 	<SFML/Config.hpp>
 
@@ -2555,12 +2658,25 @@
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\contextsettings.hpp
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\event.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\export.hpp
+	<SFML/Config.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\glresource.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\contextsettings.hpp
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\event.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Config.hpp>
 	<SFML/Window/Joystick.hpp>
 	<SFML/Window/Keyboard.hpp>
 	<SFML/Window/Mouse.hpp>
 	<SFML/Window/Sensor.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\joystick.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
@@ -2573,10 +2689,25 @@
 	<SFML/System/Vector2.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\sensor.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\joystick.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\keyboard.hpp
+	<SFML/Window/Export.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\mouse.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\sensor.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/System/Time.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\touch.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
@@ -2586,6 +2717,17 @@
 	<vector>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\window.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\touch.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\videomode.hpp
+	<SFML/Window/Export.hpp>
+	<vector>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\window.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Window/Export.hpp>
 	<SFML/Window/ContextSettings.hpp>
 	<SFML/Window/VideoMode.hpp>
@@ -2597,6 +2739,7 @@
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/String.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\windowhandle.hpp
 	<SFML/Config.hpp>
 
@@ -2613,31 +2756,66 @@
 	<SFML/Graphics/Shape.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\shape.hpp
+=======
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+
+1496058651 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\window\windowstyle.hpp
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\blendmode.hpp
+	<SFML/Graphics/Export.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\export.hpp
+	<SFML/Config.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\circleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\shape.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/System/Vector2.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\drawable.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\renderstates.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\drawable.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\renderstates.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/Transform.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\transform.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\transform.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/System/Vector2.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rect.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rect.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/System/Vector2.hpp>
 	<algorithm>
 	<SFML/Graphics/Rect.inl>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rect.inl
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\transformable.hpp
@@ -2645,6 +2823,15 @@
 	<SFML/Graphics/Transform.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\vertexarray.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rect.inl
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\transformable.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\vertexarray.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
@@ -2652,22 +2839,39 @@
 	<SFML/Graphics/Drawable.hpp>
 	<vector>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\vertex.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\vertex.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\color.hpp
 	<SFML/Graphics/Export.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\primitivetype.hpp
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\convexshape.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\color.hpp
+	<SFML/Graphics/Export.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\primitivetype.hpp
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\convexshape.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<vector>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\font.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\font.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Glyph.hpp>
 	<SFML/Graphics/Texture.hpp>
@@ -2678,27 +2882,47 @@
 	<string>
 	<vector>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\glyph.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\texture.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\glyph.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\texture.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/GlResource.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\image.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\image.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<string>
 	<vector>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rectangleshape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rendertarget.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rectangleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rendertarget.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
@@ -2710,25 +2934,41 @@
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/System/NonCopyable.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\view.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\view.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/System/Vector2.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rendertexture.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\rendertexture.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Texture.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\renderwindow.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\renderwindow.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/Window.hpp>
 	<string>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\shader.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\shader.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Glsl.hpp>
 	<SFML/Window/GlResource.hpp>
@@ -2738,23 +2978,37 @@
 	<map>
 	<string>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\glsl.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\glsl.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/Graphics/Glsl.inl>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\glsl.inl
 
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\sprite.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\glsl.inl
+
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\sprite.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/Rect.hpp>
 
+<<<<<<< HEAD
 1496096434 e:\snakke\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\text.hpp
+=======
+1496058650 d:\snake\sko—czony snake sfml\sfml-2.4.2\include\sfml\graphics\text.hpp
+>>>>>>> 4b70b003afa834af2d101c7cc765d8329efd206f
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
