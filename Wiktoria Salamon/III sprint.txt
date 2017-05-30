@@ -7,3 +7,6 @@ podzia³ na modu³y
 29.05.2017 (poniedzia³ek)
 utworzenie nowego repozytorium ze wzglêdu na przeniesienie z assembli na gita
 podzia³ na modu³y cd.
+
+26.05.2017 (wtorek)
+podzia³ na modu³y wersji z interfejsem graficznym
