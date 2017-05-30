@@ -1,37 +1,43 @@
 Czwartek 11.05.2017
-Za³o¿enie nowego konta assembla poniewa¿ stare straci³o ju¿ swoj¹ wa¿noœæ (okres próbny 14 dni),
+ZaÅ‚oÅ¼enie nowego konta assembla poniewaÅ¼ stare straciÅ‚o juÅ¼ swojÄ… waÅ¼noÅ›Ä‡ (okres prÃ³bny 14 dni),
 utworzenie przestrzeni, projektu oraz repozytorium na assembli,
 dodanie reszty grupy do teamu,
-instalacja oprogramowania SourceTree oraz niezbêdnych dodatków (Git itp.) do³šczenie i uaktualnienie repozytorium globalnego,
-oraz utworzenie mojego pliku tekstowego w którym bêdê opisywa³ moje (niekoniecznie) codzienne aktywno?ci.
-Napotka³em problemy z ³šczeniem z repozytorium globalnym.
-Przepraszam Micha³
+instalacja oprogramowania SourceTree oraz niezbÄ™dnych dodatkÃ³w (Git itp.) doÅ‚Å¡czenie i uaktualnienie repozytorium globalnego,
+oraz utworzenie mojego pliku tekstowego w ktÃ³rym bÄ™dÄ™ opisywaÅ‚ moje (niekoniecznie) codzienne aktywno?ci.
+NapotkaÅ‚em problemy z Å‚Å¡czeniem z repozytorium globalnym.
+Przepraszam MichaÅ‚
 
-Pi¹tek 12.05.2017
-Pomoc kolegom w ³¹czeniu Sourcetree z repozytorium globalnym.
+PiÄ…tek 12.05.2017
+Pomoc kolegom w Å‚Ä…czeniu Sourcetree z repozytorium globalnym.
 
-Poniedzia³ek 15.05.2017
-Rozpoczêcie nauki C++, poznanie pierwszych bibliotek i funkcji cin oraz cout.
+PoniedziaÅ‚ek 15.05.2017
+RozpoczÄ™cie nauki C++, poznanie pierwszych bibliotek i funkcji cin oraz cout.
 
 Wtorek 16.05.2017
-Uczenie siê C++, poznanie instrukcji warunkowych oraz pêtli: for, while a tak¿e do_while
+Uczenie siÄ™ C++, poznanie instrukcji warunkowych oraz pÄ™tli: for, while a takÅ¼e do_while
 
 Sroda 17.05.2017
-Oddanie uprawnieñ ScrumMastera Micha³owi Krzyszczukowi a tak¿e prezentacja wstêpnych ustaleñ projektu prowadz¹cemu zajêcia
+Oddanie uprawnieÅ„ ScrumMastera MichaÅ‚owi Krzyszczukowi a takÅ¼e prezentacja wstÄ™pnych ustaleÅ„ projektu prowadzÄ…cemu zajÄ™cia
 
 Czwartek 18.05.2017
-Uczenie siê C++, generowanie liczb pseudolosowych, funkcji konieczej do pojawiania siê jedzonka dla wê¿a na ekranie
+Uczenie siÄ™ C++, generowanie liczb pseudolosowych, funkcji konieczej do pojawiania siÄ™ jedzonka dla wÄ™Å¼a na ekranie
 
-Pi¹tek 19.05.2017
-Uczenie siê C++, tablice, funkcje rekurencyjne, zapisy strumieni do plików, odczyt strumieni z plików
+PiÄ…tek 19.05.2017
+Uczenie siÄ™ C++, tablice, funkcje rekurencyjne, zapisy strumieni do plikÃ³w, odczyt strumieni z plikÃ³w
 
-Poniedzia³ek 22.05.2017
-Uczenie siê C++, ³añcuchy, funkcje, wskaŸniki
+PoniedziaÅ‚ek 22.05.2017
+Uczenie siÄ™ C++, Å‚aÅ„cuchy, funkcje
 
 Wtorek 23.05.2017
-Napisanie funkcji, realizuj¹cej wyœwietlenie planszy gry
+Napisanie funkcji, realizujÄ…cej wyÅ›wietlenie planszy gry
 
+Åšroda 24.05.2017
+Napisanie prÃ³bnego programu : QIUZ-u
 
+Czwartek 25.05.2017
+Uczenie siÄ™ C++, wskaÅºniki, sortowanie liczb, 
 
+PiÄ…tek 26.05.2017
+Uczenie siÄ™ C++, rekurencje
 
 
