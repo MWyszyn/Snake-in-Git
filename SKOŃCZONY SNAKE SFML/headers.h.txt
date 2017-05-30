@@ -1,0 +1,13 @@
+#include <SFML/Graphics.hpp>
+#include <cmath>
+#include <windows.h>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+#include <fstream>
+#define border_up 20
+#define border_left 20
+#define border 20
+
+using namespace std;
