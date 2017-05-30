@@ -1,16 +1,16 @@
 # depslib dependency file v1.0
-1496099575 source:e:\snakke\snake modu這wo\snake_modulowo\body.cpp
+1496100185 source:e:\snakke\snake modu這wo\snake_modulowo\body.cpp
 	"headers.hpp"
 
 1496097287 e:\snakke\snake modu這wo\snake_modulowo\headers.h
 
-1496099696 source:e:\snakke\snake modu這wo\snake_modulowo\main.cpp
+1496100120 source:e:\snakke\snake modu這wo\snake_modulowo\main.cpp
 	"headers.hpp"
 	<windows.h>
 	<conio.h>
 	<fstream>
 
-1496099696 e:\snakke\snake modu這wo\snake_modulowo\headers.hpp
+1496100120 e:\snakke\snake modu這wo\snake_modulowo\headers.hpp
 	<iostream>
 	<cstdlib>
 	<ctime>
